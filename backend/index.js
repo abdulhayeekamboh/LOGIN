@@ -4,15 +4,15 @@ const port= 5000;
 const cors =require('cors');
 const jwt = require('jsonwebtoken');
 const app = express();
-const secret_key = "HELLO@123450";
+const secret_key = 'Hello@123450';
 app.use(cors());
-app.use(express.json());
+app.use(express.json());;
 
 const db = mysql.createConnection({
-    host:'localhost',
-    user:'root',
-    password:'',
-    database:'registration_db'
+    host:'b5ksdtixnki3zmno3fts-mysql.services.clever-cloud.com',
+    user:'u81ouuyeajqpwubg',
+    password:'0DpiMBw8DOkwhMPvq2GC',
+    database:'b5ksdtixnki3zmno3fts'
 });
 
 db.connect((e)=>{
