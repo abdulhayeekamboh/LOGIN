@@ -1,8 +1,9 @@
 import axios from 'axios';
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
-
+    const Navigate = useNavigate();
     const [email, setemail] = useState('');
     const [password, setpassword] = useState('');
     const [rich, setrich] = useState('');
@@ -20,6 +21,9 @@ const Login = () => {
             settype(response.data.type);
             localStorage.setItem('auth_token',response.data.msg.token);
             localStorage.setItem('userName',response.data.msg.name);
+            setTimeout(() => {
+                Navigate('/');
+            }, 1200);
         }catch(e){
             console.log(e);
             settype('error');
