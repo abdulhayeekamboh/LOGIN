@@ -83,3 +83,18 @@ p.error {
 p.success {
   color: green;
 }
+
+@media (max-width:600px) {
+  .page {
+    height: 217vmin;
+    width: 100%;
+  }
+  .container {
+    width: 90%;
+  }
+  button {
+    width: 60%;
+    height: 8%;
+  }
+  
+}
