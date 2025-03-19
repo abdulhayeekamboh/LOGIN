@@ -48,6 +48,7 @@ const Register = () => {
                 onChange={(e)=>{
                     setname(e.target.value)
                 }}
+                    required
                 />
                 <input type='email'
                 placeholder='Email'
@@ -55,6 +56,7 @@ const Register = () => {
                 onChange={(e)=>{
                     setemail(e.target.value);
                 }}
+                    required
                 />
                 <input type="text"
                 placeholder='Password'
@@ -62,6 +64,7 @@ const Register = () => {
                 onChange={(e)=>{
                     setpassword(e.target.value);
                 }}
+                    required
                 />
                 <p className={type === 'success' ? 'success':'error'}>{rich}</p>
                 <button type='submit'>Register</button>
