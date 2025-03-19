@@ -16,7 +16,7 @@ const Register = () => {
         var p = document.querySelector('p');
         p.style.display = 'block';
         try{
-            const response = await axios.post('http://localhost:5000/api/register',{
+            const response = await axios.post('https://login-gamma-three.vercel.app/api/register',{
                 name,
                 email,
                 password
