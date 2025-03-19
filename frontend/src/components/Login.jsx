@@ -42,6 +42,7 @@ const Login = () => {
                 onChange={(e)=>{
                     setemail(e.target.value);
                 }}
+                    required
                 />
                 <input type='password' 
                 placeholder='Password'
@@ -49,6 +50,7 @@ const Login = () => {
                 onChange={(e)=>{
                     setpassword(e.target.value);
                 }}
+                    required
                 />
                  <p className={type === 'success' ? 'success' : 'error'}>{rich}</p>
                 <button type='submit'>Login</button>
