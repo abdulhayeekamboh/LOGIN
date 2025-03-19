@@ -15,7 +15,7 @@ const Login = () => {
         var p = document.querySelector('p');
         p.style.display = 'block';
         try {
-            const response = await axios.post('http://localhost:5000/api/login',{email,password});
+            const response = await axios.post('https://login-gamma-three.vercel.app/api/login',{email,password});
             console.log(response.data);
             setrich(response.data.message);
             settype(response.data.type);
